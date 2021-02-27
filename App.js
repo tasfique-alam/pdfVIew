@@ -70,7 +70,7 @@ export default class App extends Component<Props> {
   }
 
   render() {
-    if (this.state.permissionGranted) {
+    if (!this.state.permissionGranted) {
       return (
         <View style={styles.container}>
           <Text>
